@@ -1,5 +1,6 @@
 import Modulo_usuarios
 import Modulo_servicios
+import Modulo_bonificaciones
 
 
 
@@ -61,6 +62,9 @@ while True :
         print ("*************************************************")
         print ("* Módulo de Bonificaciones para Clientes Leales *")
         print ("*************************************************")
+        print ("clientes leales")
+        print ( Modulo_bonificaciones.leales())
+
 
     elif decision_principal==3:
         print ("******************************")

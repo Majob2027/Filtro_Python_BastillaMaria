@@ -1,23 +1,20 @@
-def clientesleales ():
-    print ("presiona enter para visualizar las personas que son clientes leales ")
-    x=input("")
 
+
+def leales ():
     import json
-    with  open ('Datos.json' , 'r') as file:
-        mijson=json.load (file)
-        lista =mijson['Datos']
-
     
-    lista = mijson['Datos']
+    with open("Datos.json", 'r') as x:
+        data = json.load(x)
+    
+    listaaprobaron = [camper for camper in data["Datos"] if camper["Categoria"] == "Leales"]
+    print(" Por favor de enter para mostrar Campers que aprobaron el examen inicial")
+    enter=input("")
 
-    documento = ("cliente leal")
 
+    for camper in listaaprobaron:
+        for llave, valor in camper.items():
+            print (f"{llave}: {valor}")
+        print("-------------------------\n")
+    with open('Datos.json', 'w', encoding="utf8") as x:
+            json.dump(data, x, indent=4)
 
-    Usuario_encontrado = None
-    for Usuario in lista :
-        if Usuario["Identificacion"] == documento:
-            Usuario_encontrado = Usuario
-            break
-
-    if Usuario_encontrado is not None:
-        print(f"Nombre" , [])
