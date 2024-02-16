@@ -13,8 +13,8 @@ def crearusuario ():
     lista_usuarios["Direccion"]= input("Escriba Direccion de usuario : ")
     lista_usuarios["Telefono"]= input("Escriba telefono de usuario : ")
     lista_usuarios["Años con movistar"]= input("Escriba años con movistar:" )
-    print (" Escriba : si 10 años o mas = Clientes leales o entre 3 y 10 años o mas = Clientes regulares o si menos de tres años = Nuevos ") 
-    lista_usuarios["Categoria"]=input ("  Escriba Clientes leales o Clientes regulares o clientes nuevos dependienod a lo mecionado anteriormente :") 
+    print (" Escriba : si 10 años o mas = Leales o entre 3 y 10 años o mas = Clientes regulares o si menos de tres años = Nuevos ") 
+    lista_usuarios["Categoria"]=input ("  Escriba Leales o Clientes regulares o clientes nuevos dependienod a lo mecionado anteriormente :") 
 
     print ("Usuario creado correctamente ")
     mijson['Datos'].append (lista_usuarios)
